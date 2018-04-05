@@ -1,4 +1,24 @@
+.title{
+  text-align:center;
+}
 .img{
   width:290px;
   height:190px;
+}
+@media only screen and (max-width:1200px){
+  .img{
+    width:250px;
+  }
+}
+@media only screen and (max-width:991px){
+  .img{
+    width:180px;
+    height:100px;
+  }
+}
+@media only screen and (max-width:767px){
+  .img{
+    width:290px;
+    height:190px;
+  }
 }
