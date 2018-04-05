@@ -147,6 +147,7 @@ gulp.task('serve:test', ['scripts'], () => {
 gulp.task('wiredep', () => {
   gulp.src('app/*.html')
     .pipe(wiredep({
+      exclude: ['bootstrap.js'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app'));
